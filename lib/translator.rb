@@ -34,5 +34,5 @@ def get_english_meaning (file_path, emoticon)
   file_path
   emoji_list = load_library(file_path)
   p emoticon
-  p emoji_list[:get_meaning].fetch(emoticon, "Sorry, translation for emoticon not found")
+  p emoji_list[:get_meaning].fetch(emoticon, "Sorry, that emoticon was not found")
 end
