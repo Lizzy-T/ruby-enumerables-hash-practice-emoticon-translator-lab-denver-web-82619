@@ -29,7 +29,7 @@ exit
 
 def get_japanese_emoticon(file_path, emoticon)
   p "-------------------- start ----------------------"
-  
+
 end
 
 def get_english_meaning
