@@ -30,7 +30,7 @@ def get_japanese_emoticon(file_path, emoticon)
 
 end
 
-def get_english_meaning (file_path, emotion)
+def get_english_meaning (file_path, emoticon)
   file_path
   emoji_list = load_library(file_path)
   p emoticon
