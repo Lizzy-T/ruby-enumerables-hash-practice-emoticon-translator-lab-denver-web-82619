@@ -14,20 +14,16 @@ def load_library(file_path)
   emoticon_raw.each_pair do |meaning, value|
     english = value[0]
     japan = value[1]
-    p "#{meaning} #{english}  #{japan}"
     value.each do |emoji|
       if emoji == japan
         organized_emojis[:get_meaning][japan] = meaning.to_s
-        p organized_emojis[:get_meaning]
       end
       if emoji == english
         organized_emojis[:get_emoticon][english] = japan.to_s
       end
-      p organized_emojis
     end
-exit
   end
-  organized_emojis
+  p organized_emojis
 end
 
 
