@@ -2,7 +2,6 @@
 emoticons = {}
 require "yaml"
 emoticons = YAML.load_file('/home/RiverCreature/ruby-enumerables-hash-practice-emoticon-translator-lab-denver-web-82619/lib/emoticons.yml')
-binding.pry
 exit
 
 def load_library
