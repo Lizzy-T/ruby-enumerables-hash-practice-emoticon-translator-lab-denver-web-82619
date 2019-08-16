@@ -1,18 +1,25 @@
 emoticons = {}
 file_path = "/home/RiverCreature/ruby-enumerables-hash-practice-emoticon-translator-lab-denver-web-82619/lib/emoticons.yml"
 
-
+organized_emojis = {:get_meaning => {},
+                    :get_emoticon => {}}
 def load_library(file_path)
   require "yaml"
   emoticons = YAML.load_file(file_path)
   p emoticons
-  emoticons.each_pair do |meaning, value|
+  emoticons.each_pair do |meaning, english, japan|
+    binding.pry
+    exit
     english = value[0]
     japan = value[1]
     value.each do |emoji|
+      if emoji == japan
+        organized_emojis[:get_meaning][japan] = [meaning]
+      end
+      if emoji == english
+        organized_emojis[:get_emoticon][english] = [japan]
+      end
 
-      binding.pry
-      exit
     end
 
   end
