@@ -30,6 +30,8 @@ def get_japanese_emoticon(file_path, emoticon)
 
 end
 
-def get_english_meaning
-  # code goes here
+def get_english_meaning (file_path, emotion)
+  file_path
+  emoji_list = load_library(file_path)
+  emoji_list[:get_meaning].fetch(emoticon, "Sorry, translation for emoticon not found")
 end
