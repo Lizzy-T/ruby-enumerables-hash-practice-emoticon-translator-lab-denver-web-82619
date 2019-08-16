@@ -3,10 +3,11 @@ require "pry"
 emoticon_raw = {}
 file_path = "/home/RiverCreature/ruby-enumerables-hash-practice-emoticon-translator-lab-denver-web-82619/lib/emoticons.yml"
 
-organized_emojis = {:get_meaning => {},
-                    :get_emoticon => {}}
+
 
 def load_library(file_path)
+  organized_emojis = {:get_meaning => {},
+                      :get_emoticon => {}}
   p "-------------------- start ----------------------"
   require "yaml"
   emoticon_raw = YAML.load_file(file_path)
