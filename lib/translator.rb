@@ -17,11 +17,11 @@ def load_library(file_path)
     p "#{meaning} #{english}  #{japan}"
     value.each do |emoji|
       if emoji == japan
-        organized_emojis[:get_meaning][japan] = [meaning]
+        organized_emojis[:get_meaning][japan] = meaning.to_s
         p organized_emojis[:get_meaning]
       end
       if emoji == english
-        organized_emojis[:get_emoticon][english] = [japan]
+        organized_emojis[:get_emoticon][english] = japan.to_s
       end
       p organized_emojis
     end
