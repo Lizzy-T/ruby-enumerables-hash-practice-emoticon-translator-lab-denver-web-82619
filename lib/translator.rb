@@ -6,7 +6,10 @@ def load_library(file_path)
   require "yaml"
   emoticons = YAML.load_file(file_path)
   p emoticons
-
+  emoticons.each_pair do |key, value|
+  binding.pry
+  exit
+  end
 end
 
 
