@@ -6,7 +6,8 @@ organized_emojis = {:get_meaning => {},
 def load_library(file_path)
   require "yaml"
   emoticon_raw = YAML.load_file(file_path)
-  emoticons_raw.each_pair do |meaning, value|
+  p emoticon_raw
+  emoticon_raw.each_pair do |meaning, value|
     english = value[0]
     japan = value[1]
     value.each do |emoji|
