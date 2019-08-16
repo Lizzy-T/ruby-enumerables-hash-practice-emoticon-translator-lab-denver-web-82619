@@ -11,6 +11,7 @@ def load_library(file_path)
     english = value[0]
     japan = value[1]
     p "#{meaning} : #{english}  #{japan}"
+    exit
     value.each do |emoji|
       if emoji == japan
         organized_emojis[:get_meaning][japan] = [meaning]
