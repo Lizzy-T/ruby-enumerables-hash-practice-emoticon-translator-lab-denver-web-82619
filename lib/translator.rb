@@ -4,7 +4,6 @@ emoticon_raw = {}
 file_path = "/home/RiverCreature/ruby-enumerables-hash-practice-emoticon-translator-lab-denver-web-82619/lib/emoticons.yml"
 
 
-organized_emojis = {}
 def load_library(file_path)
   organized_emojis = {:get_meaning => {},
                       :get_emoticon => {}}
@@ -24,12 +23,13 @@ def load_library(file_path)
   end
   organized_emojis
 end
-binding.pry
-exit
+
 
 def get_japanese_emoticon(file_path, emoticon)
   p "-------------------- start ----------------------"
-
+  emoji_list = load_library(file_path)
+  binding.pry
+  exit
 end
 
 def get_english_meaning
