@@ -1,6 +1,6 @@
 
 emoticons = {}
-require "YAML"
+require "yaml"
 emoticons = YAML.load_file('emoticons.yml')
 binding.pry
 exit
