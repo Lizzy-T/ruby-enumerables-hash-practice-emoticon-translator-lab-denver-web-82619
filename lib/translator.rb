@@ -10,7 +10,7 @@ def load_library(file_path)
   emoticon_raw.each_pair do |meaning, value|
     english = value[0]
     japan = value[1]
-    p "#{meaning} : #{english}  #{japan}"
+    p "#{meaning} #{english}  #{japan}"
     exit
     value.each do |emoji|
       if emoji == japan
