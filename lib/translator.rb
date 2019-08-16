@@ -1,7 +1,7 @@
 
 require "pry"
 emoticon_raw = {}
-file_path = "/home/RiverCreature/ruby-enumerables-hash-practice-emoticon-translator-lab-denver-web-82619/lib/emoticons.yml"
+#file_path = "/home/RiverCreature/ruby-enumerables-hash-practice-emoticon-translator-lab-denver-web-82619/lib/emoticons.yml"
 
 
 def load_library(file_path)
