@@ -16,12 +16,13 @@ def load_library(file_path)
       if emoji == japan
         organized_emojis[:get_meaning][japan] = [meaning]
         p organized_emojis[:get_meaning]
+        exit
+
       end
       if emoji == english
         organized_emojis[:get_emoticon][english] = [japan]
       end
       p organized_emojis
-exit
     end
 
   end
