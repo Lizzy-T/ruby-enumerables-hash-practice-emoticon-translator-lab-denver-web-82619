@@ -28,6 +28,8 @@ end
 def get_japanese_emoticon(file_path, emoticon)
   p "-------------------- start ----------------------"
   emoji_list = load_library(file_path)
+  emoji_list[:get_emoticon].fetch(emoticon)
+  
   binding.pry
   exit
 end
