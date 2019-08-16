@@ -8,6 +8,8 @@ def load_library(file_path)
   emoticons = YAML.load_file(file_path)
   p emoticons
   emoticons.each_pair do |meaning, value, (emoji)|
+    binding.pry
+    exit
     english = value[0]
     japan = value[1]
     value.each do |emoji|
@@ -17,7 +19,7 @@ def load_library(file_path)
       if emoji == english
         organized_emojis[:get_emoticon][english] = [japan]
       end
-
+exit
     end
 
   end
