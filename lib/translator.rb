@@ -24,11 +24,9 @@ end
 
 
 def get_japanese_emoticon(file_path, emoticon)
-  p "-------------------- start ----------------------"
-  p file_path
+  file_path
   emoji_list = load_library(file_path)
-  p emoticon
-p emoji_list[:get_emoticon].fetch(emoticon, "Sorry, that emoticon was not found")
+  emoji_list[:get_emoticon].fetch(emoticon, "Sorry, that emoticon was not found")
 
 end
 
