@@ -1,8 +1,6 @@
 
 require "pry"
 emoticon_raw = {}
-#file_path = "/home/RiverCreature/ruby-enumerables-hash-practice-emoticon-translator-lab-denver-web-82619/lib/emoticons.yml"
-
 
 def load_library(file_path)
   organized_emojis = {:get_meaning => {},
@@ -27,8 +25,9 @@ end
 
 def get_japanese_emoticon(file_path, emoticon)
   p "-------------------- start ----------------------"
+  p file_path
   emoji_list = load_library(file_path)
-  p emoji
+  p emoticon
 p emoji_list[:get_emoticon].fetch(emoticon, "Sorry, that emoticon was not found")
 
 end
